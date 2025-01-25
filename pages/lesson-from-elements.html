@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Elements</title>
+</head>
+<body>
+  <h1>Form Elements</h1>
+  <!-- Label - This is used to define a label for an input -->
+  <strong>==== 1. Label ====</strong>
+  <br>
+  <br/>
+  <label for="user name">User Name</label>
+
+  <br/>
+  <hr/>  <!-- horizontal line -->
+  <strong>==== 2. Input ====</strong>
+  <p>-----Text Input------</p>
+  <label for="firstname"> First Name : </label>
+  <input type="text" placeholder="Enter Your First Name" id="firstname" maxlength="10"/>
+  <!-- placeholder = "Enter Your First Name" - This is used to show a hint to the user -->
+  <!-- maxlength="5" - This is used to limit the number of characters that can be entered into the input field -->
+
+  <p>------Number Input------</p>
+  <label for="age"> Age : </label>
+  <input type="number" value="18"/>
+  <!-- value = "18" - This is used to set a default value for the input field -->
+
+  <p>------Password Input------</p>
+  <label for="password"> Password : </label>
+  <input type="password"/>
+
+  <p>------Date Input------</p>
+  <label for="date"> Date : </label>
+  <input type="date"/>
+
+  <p>------Radio Button------</p>
+  <label for="male">Male : </label>
+  <input type="radio" name = "gender"/>
+  <label for="femail"> Femail</label>
+  <input type="radio" name = "gender"/>
+
+  <p>------Checkbox------</p>
+  <label for="remember">Remember Me</label>
+  <input type="checkbox" name="remember"/>
+
+  <p>------File Upload------</p>
+  <input type="file" name = "file"/>
+
+  <hr>
+  <strong>==== 3. Text Area ====</strong>
+  <br>
+  <br>
+  <textarea name="message" id="message" placeholder="Enter Your Message" cols="30" rows="1"></textarea>
+
+  <hr>
+  <strong>==== 4. Buttons ====</strong>
+  <br>
+  <button type = "button" onclick="alert('Hello World')">click me</button>
+
+  <hr>
+  <strong>==== 5. Select ====</strong>
+  <br>
+  <br>
+  <select name="technologies" id="tech">
+  <option value="java">Java</option>
+  <option value="javaScript">Java Script</option>
+  <option value="python">Python</option>
+  </select>
+
+  <hr>
+  <strong>==== 6. Fieldset and legend ====</strong>
+  <br>
+  <br>
+  <fieldset>
+    <legend>personal information</legend>
+    <label for="firstname">First Name : </label>
+    <input type="text">
+    <br>
+    <br>
+    <label for="lastname">Second Name :</label>
+    <input type="text">
+  </fieldset>
+  <!-- fieldset - This is used to group related elements in a form -->
+
+  <hr>
+  <strong>==== 7. Form ====</strong>
+  <br>
+  <br>
+  <form action="" method="post">
+    <label for="firstname">First Name : </label>
+    <input type="text" name = "firstname" id="firstname" placeholder="Enter Your First Name" required>
+    <br>
+    <br>
+    <label for="lastname">Second Name :</label>
+    <input type="text" name = "lastname" id="lastname" placeholder="Enter Your Last Name" required>
+    <br>
+    <br>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
