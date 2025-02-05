@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson CSS Selectors</title>
+  <style>
+    /* ======01. Element Selector====== */
+    h2 {
+      color: red;
+    }
+
+    /* ======02. Class Selector====== */
+    .heading {
+      color: blue;
+    }
+
+    /* ======03. ID Selector====== */
+    #title {
+      color: green;
+    }
+
+    a[target="_blank"] {
+      color: yellow;
+    }
+
+    div p {
+      color: purple;
+    }
+
+    div > p {
+      color: chartreuse;
+    }
+
+    h2 + p {
+      color: blueviolet;
+    }
+
+    h1 ~ p{
+      color: chocolate;
+    }
+
+    /* li:first-child{
+      color: green;
+    }
+
+    li:last-child{
+      color: lightcoral;
+    }
+
+    li:nth-child(3){
+      color: firebrick;
+    } */
+
+    li:nth-child(odd){
+      color: brown;
+    }
+
+    li:nth-child(even){
+      color: green;
+    }
+
+    ul:hover{
+      background-color: aqua;
+    }
+
+    /* ======10. Psedo Element Selector ====== */
+    p::first-letter{
+      color: red;
+      font-size: 30px;
+    }
+
+    p::first-line{
+      color: blue;
+      font-size: 20px;
+    }
+
+    p::before{
+      content: "Hello ";
+      color: blue;
+    }
+
+    p::after{
+      content: " !!!";
+      color: red;
+    }
+
+    /* ======11. Grouping Selector (,)====== */
+    h1,h2,h3{
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Selectors</h1>
+
+  <strong>======01. Element Selector======</strong>
+  <h2>Hello World</h2>
+
+  <strong>======02. Class Selector======</strong>
+  <h1 class="heading">Heading 01</h1>
+  <h2 class="heading">Heading 02</h2>
+  <h3 class="heading">Heading 03</h3>
+  <h4 class="heading">Heading 04</h4>
+  <h5 class="heading">Heading 05</h5>
+  <h6 class="heading">Heading 06</h6>
+
+  <strong>======03. ID Selector======</strong>
+  <h3 id="title">My Title</h3>
+
+  <strong>======04. Attribute Selector======</strong>
+  <br>
+  <a href="http://www.google.com" target="_blank">Click Here</a>
+
+  <br>
+  <strong>======05. Descendant Selector (Space)======</strong>
+  <div>
+    <p>Hello World 1</p>
+    <p>Hello World 2</p>
+    <p>Hello World 3</p>
+  </div>
+
+  <strong>======06. Child Selector (>)======</strong>
+  <div>
+    <p>This paragraph is direct child of div</p>
+    <section>
+      <p>This paragarph is inside a section, not a direct child of div</p>
+    </section>
+  </div>
+
+  <strong>======07. Adjacent Sibling Selector (+)======</strong>
+  <h2>Adjacent</h2>
+  <p>Hello One</p>
+  <p>Hello Two</p>
+
+  <strong>======08. Genaral Sibling Selector (~)======</strong>
+  <h1>Main Heading</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, dicta?</p>
+  <p>Lorem ipsum dolor sit amet consectetur.</p>
+  <div>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+  </div>
+
+  <strong>======09. Psedo Class Selector ======</strong>
+  <ul>
+    <li>Java</li>
+    <li>Python</li>
+    <li>Css</li>
+    <li>JS</li>
+  </ul>
+
+  <strong>======10. Psedo Element Selector ======</strong>
+  <p>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, dolorem. Illo ipsum ea tenetur doloremque sunt tempora nulla officiis eaque aliquid consequatur! Aliquid autem aperiam voluptates animi quia illo dignissimos!
+  </p>
+
+  <strong>======11. Grouping Selector (,)======</strong>
+  <h1>Heading 01</h1>
+  <h2>Heading 02</h2>
+  <h3>Heading 03</h3>
+
+  <!-- (space)(>)(+)(~) <--- css Combinators
+  Element Selector, Class Selector, Id Selector, Attribute Selector <--- css Traversing -->
+</body>
+</html>

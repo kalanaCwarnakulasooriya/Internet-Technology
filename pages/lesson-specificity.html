@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson Specificity</title>
+  <style>
+    p{
+      background-color: yellow;
+    }
+
+    .content{
+      background-color: aqua;
+    }
+
+    #main-content{
+      background-color: gold;
+    }
+
+    div p {
+      background-color: green;
+    }
+
+    div .content{
+      background-color: red;
+    }
+
+    div #main-content{
+      background-color: blue;
+    }
+
+    #card #main-content{
+      background-color: orange;
+    }
+  </style>
+</head>
+<body>
+  <div class="card-container" id="card">
+    <p class="content" id="main-content" style="background-color: violet;">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum iste, id error unde odio neque nemo perferendis aspernatur doloremque, dolores voluptate. Eum vero corrupti mollitia optio fugit exercitationem nihil! Excepturi!
+    </p>
+  </div>
+</body>
+</html>
