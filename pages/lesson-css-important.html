@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson CSS Important</title>
+  <style>
+    h1 {
+      color: green !important; /* This will override all other styles */
+    }
+    .title {
+      color: red;
+    }
+
+    #main_title {
+      color: blue;
+    }
+
+    div h1 {
+      color: yellow;
+    }
+
+    .container #main_title {
+      color: purple;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title" id="main_title" style="color: blueviolet;">CSS Important</h1>
+  </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson CSS Flexbox</title>
+  <style>
+    body{
+      margin: 0;
+    }
+
+    .box{
+      width: 100px;
+      border-radius: 12px;
+      border: 2px solid black;
+      text-align: center;
+      font-size: 60px;
+    }
+
+    .box-1{
+      background-color: rgb(119, 216, 119);
+    }
+
+    .box-2{
+      background-color: gray;
+    }
+
+    .box-3{
+      background-color: rgb(230, 215, 83);
+    }
+
+    .box-4{
+      background-color: aqua;
+    }
+
+    .container{
+      display: flex;
+      height: 95vh;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box box-1">1</div>
+    <div class="box box-2">2</div>
+    <div class="box box-3">3</div>
+    <div class="box box-4">4</div>
+  </div>
+</body>
+</html>

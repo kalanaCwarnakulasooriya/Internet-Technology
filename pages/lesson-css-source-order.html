@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson CSS Source Order</title>
+  <style>
+    h1 {
+      color: green;
+    }
+    h1,h2 {
+      color: red; /* This will override the h1 color */
+    }
+    h1 {
+      color: blue; /* This will override the h2 color */
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Source Order</h1>
+  <h2>Hello World</h2>
+</body>
+</html>
+
+
+<!-- Cascade 
+
+CSS -- Cascading Style Sheets
+
+01. Origins of style
+02. Specificity
+03. Importance
+04. Source order
+
+
+cascade kiynne set of rules tikak
+html elemnts wlt styles apply krddi ewa mona order ektd apply wenna one kiyl hadagtta rules set ekak -->
