@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson CSS Grid Layout</title>
+  <style>
+    body{
+      margin: 0;
+    }
+    .container{
+      display: grid;
+      /* grid-template-columns:50% 50%; */
+      /* grid-template-columns: 10% 20% 30% 40%; */
+      /* grid-template-columns: 1fr 2fr 3fr; */
+      grid-template-columns: repeat(3, 1fr);
+
+      /* column-gap: 12px;
+      row-gap: 12px; */
+
+      gap: 4px 12px;
+
+      /* gap: 12px; */
+    }
+    .container > div{
+      background-color: aqua;
+      border: 1px solid black;
+      padding: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, officiis officia voluptatum sunt excepturi dolor eos tempora autem? Repellat magnam culpa neque itaque quam perferendis! Laboriosam accusamus excepturi dolores ipsam dicta. Ea tempore quidem sunt cumque earum expedita asperiores adipisci minima quia 🙂‍↔️ quasi officia blanditiis ab assumenda quibusdam, odit consectetur?</div>
+    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, officiis officia voluptatum sunt excepturi dolor eos tempora autem? Repellat magnam culpa neque itaque quam perferendis! Laboriosam accusamus excepturi dolores ipsam dicta. Ea tempore quidem sunt cumque earum expedita asperiores adipisci minima quia quasi officia blanditiis ab assumenda quibusdam, odit consectetur?</div>
+    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, officiis officia voluptatum sunt excepturi dolor eos tempora autem? Repellat magnam culpa neque itaque quam perferendis! Laboriosam accusamus excepturi dolores ipsam dicta. Ea tempore quidem sunt cumque earum expedita asperiores adipisci minima quia quasi officia blanditiis ab assumenda quibusdam, odit consectetur?</div>
+    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, officiis officia voluptatum sunt excepturi dolor eos tempora autem? Repellat magnam culpa neque itaque quam perferendis! Laboriosam accusamus excepturi dolores ipsam dicta. Ea tempore quidem sunt cumque earum expedita asperiores adipisci minima quia quasi officia blanditiis ab assumenda quibusdam, odit consectetur?</div>
+    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, officiis officia voluptatum sunt excepturi dolor eos tempora autem? Repellat magnam culpa neque itaque quam perferendis! Laboriosam accusamus excepturi dolores ipsam dicta. Ea tempore quidem sunt cumque earum expedita asperiores adipisci minima quia quasi officia blanditiis ab assumenda quibusdam, odit consectetur?</div>
+    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, officiis officia voluptatum sunt excepturi dolor eos tempora autem? Repellat magnam culpa neque itaque quam perferendis! Laboriosam accusamus excepturi dolores ipsam dicta. Ea tempore quidem sunt cumque earum expedita asperiores adipisci minima quia quasi officia blanditiis ab assumenda quibusdam, odit consectetur?</div>
+    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, officiis officia voluptatum sunt excepturi dolor eos tempora autem? Repellat magnam culpa neque itaque quam perferendis! Laboriosam accusamus excepturi dolores ipsam dicta. Ea tempore quidem sunt cumque earum expedita asperiores adipisci minima quia quasi officia blanditiis ab assumenda quibusdam, odit consectetur?</div>
+    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, officiis officia voluptatum sunt excepturi dolor eos tempora autem? Repellat magnam culpa neque itaque quam perferendis! Laboriosam accusamus excepturi dolores ipsam dicta. Ea tempore quidem sunt cumque earum expedita asperiores adipisci minima quia quasi officia blanditiis ab assumenda quibusdam, odit consectetur?</div>
+    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, officiis officia voluptatum sunt excepturi dolor eos tempora autem? Repellat magnam culpa neque itaque quam perferendis! Laboriosam accusamus excepturi dolores ipsam dicta. Ea tempore quidem sunt cumque earum expedita asperiores adipisci minima quia quasi officia blanditiis ab assumenda quibusdam, odit consectetur?</div>
+  </div>
+</body>
+</html>

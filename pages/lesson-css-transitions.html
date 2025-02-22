@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson CSS Transitions</title>
+  <style>
+    #add-to-cart-btn{
+      background-color:purple;
+      border: 2px solid black;
+      color: white;
+      padding:12px 48px;
+      border-radius: 12px;
+    }
+    #add-to-cart-btn:hover{
+      background-color: #f39c12;
+      color: #000;
+      cursor: pointer;
+
+      transition-property: background-color;
+      transition-duration: 3s;
+      transition-timing-function: ease-in-out;
+      transition-delay: 1s;
+    }
+
+    #circle{
+      border-radius: 50%;
+      border: 1px solid black;
+      width: 100px;
+      height: 100px;
+      background-color: #f39c12;
+      
+      transition: transform 3s ease-in-out, background-color 3s ease-in-out, scale 3s ease-in-out;
+    }
+
+    #circle:hover{
+      background-color: red;
+      color: #000;
+      cursor: pointer;
+
+      transform: translateX(150px);
+      scale: 1.5s;
+    }
+  </style>
+</head>
+<body>
+  <button id="add-to-cart-btn">Add To Cart</button>
+  <br>
+  <hr>
+  <div id="circle"></div>
+</body>
+</html>
