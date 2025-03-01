@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Execice-10</title>
+    <style>
+        .card-container{
+            background-color: aquamarine;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .mood-box{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 1s ease-in-out;
+        }
+        .mood-box:hover{
+            transform: scale(1.5);
+        }
+        .mood-emoji{
+            font-size: 50px;
+        }
+        .mood-text{
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+  <div class="card-container">
+    <div class="mood-box">
+      <span class="mood-emoji">😁</span>
+      <span class="mood-text">Happy</span>
+    </div>
+    <div class="mood-box">
+      <span class="mood-emoji">🥲</span>
+      <span class="mood-text">Sad</span>
+    </div>
+    <div class="mood-box">
+      <span class="mood-emoji">😍</span>
+      <span class="mood-text">Love</span>
+    </div>
+    <div class="mood-box">
+      <span class="mood-emoji">🤭</span>
+      <span class="mood-text">Shy</span>
+    </div>
+  </div>
+    
+</body>
+</html>

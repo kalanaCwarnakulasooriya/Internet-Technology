@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 13</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: bisque;
+      }
+      header {
+        text-align: center;
+        padding: 10px;
+      }
+      main {
+        margin: 20px;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 10px 10px;
+      }
+      .container {
+        /* width: 300px; */
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+      .head {
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        border-radius: 10px;
+      }
+      .head img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .text {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+      }
+      button {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: none;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: gray;
+      }
+
+      @media screen and (max-width: 575px) {
+        main {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+
+      @media screen and (min-width: 576px) and (max-width: 767px) {
+        main {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media screen and (min-width: 768px) and (max-width: 991px) {
+        main {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      @media screen and (min-width: 992px) and (max-width: 1199px) {
+        main {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+
+      @media screen and (min-width: 1200px) and (max-width: 1399px) {
+        main {
+          grid-template-columns: repeat(5, 1fr);
+        }
+      }
+
+      @media screen and (min-width: 1400px) {
+        main {
+          grid-template-columns: repeat(6, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Product Gallery</h1>
+    </header>
+    <main>
+      <div class="container">
+        <div class="head">
+          <img src="/assets/images/lap.jpg" alt="lap-top" />
+        </div>
+        <div class="text">
+          <h4>Laptop</h4>
+          <h5>$3000. 00</h5>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero odit ea
+          quibusdam consequuntur! Sed, ab? Ipsa nulla natus repellat magnam!
+        </p>
+        <button>Not Now</button>
+        <button>Add to Cart</button>
+      </div>
+      <div class="container">
+        <div class="head">
+          <img src="/assets/images/lap.jpg" alt="lap-top" />
+        </div>
+        <div class="text">
+          <h4>Laptop</h4>
+          <h5>$3000. 00</h5>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero odit ea
+          quibusdam consequuntur! Sed, ab? Ipsa nulla natus repellat magnam!
+        </p>
+        <button>Not Now</button>
+        <button>Add to Cart</button>
+      </div>
+      <div class="container">
+        <div class="head">
+          <img src="/assets/images/lap.jpg" alt="lap-top" />
+        </div>
+        <div class="text">
+          <h4>Laptop</h4>
+          <h5>$3000. 00</h5>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero odit ea
+          quibusdam consequuntur! Sed, ab? Ipsa nulla natus repellat magnam!
+        </p>
+        <button>Not Now</button>
+        <button>Add to Cart</button>
+      </div>
+      <div class="container">
+        <div class="head">
+          <img src="/assets/images/lap.jpg" alt="lap-top" />
+        </div>
+        <div class="text">
+          <h4>Laptop</h4>
+          <h5>$3000. 00</h5>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero odit ea
+          quibusdam consequuntur! Sed, ab? Ipsa nulla natus repellat magnam!
+        </p>
+        <button>Not Now</button>
+        <button>Add to Cart</button>
+      </div>
+      <div class="container">
+        <div class="head">
+          <img src="/assets/images/lap.jpg" alt="lap-top" />
+        </div>
+        <div class="text">
+          <h4>Laptop</h4>
+          <h5>$3000. 00</h5>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero odit ea
+          quibusdam consequuntur! Sed, ab? Ipsa nulla natus repellat magnam!
+        </p>
+        <button>Not Now</button>
+        <button>Add to Cart</button>
+      </div>
+      <div class="container">
+        <div class="head">
+          <img src="/assets/images/lap.jpg" alt="lap-top" />
+        </div>
+        <div class="text">
+          <h4>Laptop</h4>
+          <h5>$3000. 00</h5>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero odit ea
+          quibusdam consequuntur! Sed, ab? Ipsa nulla natus repellat magnam!
+        </p>
+        <button>Not Now</button>
+        <button>Add to Cart</button>
+      </div>
+      <div class="container">
+        <div class="head">
+          <img src="/assets/images/lap.jpg" alt="lap-top" />
+        </div>
+        <div class="text">
+          <h4>Laptop</h4>
+          <h5>$3000. 00</h5>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero odit ea
+          quibusdam consequuntur! Sed, ab? Ipsa nulla natus repellat magnam!
+        </p>
+        <button>Not Now</button>
+        <button>Add to Cart</button>
+      </div>
+      <div class="container">
+        <div class="head">
+          <img src="/assets/images/lap.jpg" alt="lap-top" />
+        </div>
+        <div class="text">
+          <h4>Laptop</h4>
+          <h5>$3000. 00</h5>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero odit ea
+          quibusdam consequuntur! Sed, ab? Ipsa nulla natus repellat magnam!
+        </p>
+        <button>Not Now</button>
+        <button>Add to Cart</button>
+      </div>
+    </main>
+  </body>
+</html>

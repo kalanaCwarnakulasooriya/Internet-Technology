@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson CSS Animation</title>
+  <style>
+    body{
+      margin: 0;
+    }
+    .container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .circle{
+      width: 80px;
+      height: 80px;
+      background-color: purple;
+      border-radius: 50%;
+      animation: bounce 1.5s ease-in-out infinite;
+      margin: 40px;
+    }
+
+    @keyframes bounce{
+      0%, 100%{
+        transform: translateY(0);
+      }
+      50%{
+        transform: translateY(100px);
+      }
+    }
+
+    .c1{
+      animation-delay: 0.1s;
+    }
+
+    .c2{
+      animation-delay: 0.4s;
+    }
+
+    .c3{
+      animation-delay: 0.7s;
+    }
+
+    .c4{
+      animation-delay: 1s;
+    }
+
+    .c5{
+      animation-delay: 1.3s;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="circle c1"></div>
+    <div class="circle c2"></div>
+    <div class="circle c3"></div>
+    <div class="circle c4"></div>
+    <div class="circle c5"></div>
+  </div>
+</body>
+</html>

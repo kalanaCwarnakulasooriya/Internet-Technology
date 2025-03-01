@@ -41,6 +41,22 @@
       transform: translateX(150px);
       scale: 1.5s;
     }
+
+    .image-container{
+      width: 200px;
+      height: 200px;
+      overflow: hidden;
+    }
+
+    .image{
+      width: 100%;
+      transition: transform 3s ease-in-out 1s;
+    }
+
+    .image-container:hover img{
+      transform: scale(1.5) rotate(360deg); 
+      /* deg - anshaka */
+    }
   </style>
 </head>
 <body>
@@ -48,5 +64,10 @@
   <br>
   <hr>
   <div id="circle"></div>
+  <br>
+  <hr>
+  <div class="image-container">
+    <img src="/assets/images/my_original.jpg" alt="" class="image">
+  </div>
 </body>
 </html>

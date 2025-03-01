@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson CSS Animation</title>
+  <style>
+    body{
+      margin: 0;
+    }
+    .box{
+      width: 200px;
+      height: 200px;
+      background-color: purple;
+
+      /* animation-name: down-up;
+      animation-duration: 2s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      animation-delay: 1s; */
+
+      /* animation: down-up 2s ease-in-out infinite 1s; */
+
+      animation: background-color 2s ease-in-out infinite 1s;
+    }
+    /* at rules */
+    /* @keyframes down-up{
+      0%{
+        transform: translateY(0);
+      }
+      50%{
+        transform: translateY(300px);
+      }
+      100%{
+        transform: translateY(0);
+      }
+    } */
+
+    /* @keyframes background-color{
+      0%{
+        background-color: purple;
+      }
+      50%{
+        background-color: yellow;
+      }
+      100%{
+        background-color: purple;
+      }
+    } */
+
+    /* @keyframes background-color{
+      from{
+        background-color: purple;
+      }
+      to{
+        background-color: yellow;
+      }
+    } */
+/* 
+    @keyframes background-color{
+      0%{
+        transform: translateY(0);
+        background-color: purple;
+      }
+      25%{
+        transform: translateY(150px);
+        background-color: aqua;
+      }
+      50%{
+        transform: translateY(300px);
+        background-color: yellow;
+      }
+      75%{
+        transform: translateY(150px);
+        background-color: red;
+      }
+      100%{
+        transform: translateY(0);
+        background-color: purple;
+      }
+    } */
+
+    
+    @keyframes background-color{
+      0%,100%{
+        transform: translateX(0);
+      }
+      25%{
+        transform: translateX(300px);
+      }
+      50%{
+        transform: translateX(300px) translateY(300px);
+      }
+      75%{
+        transform: translateX(0px) translateY(300px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>
