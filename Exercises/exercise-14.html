@@ -3,170 +3,137 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-      <title>Exercise 14</title>
-      <style>
-        body {
-          margin: 0;
-          padding: 0;
-        }
-        header img{
-          width: 40px;
-          height: auto;
-          border-radius: 50%;
-          border: 2px solid black;
-          margin-left: 10px;
-        }
-        header{
-          display: flex;
-          align-items: center;
-          background-color: rgba(0, 0, 0, 0.881);
-        }
-        header h2{
-          color: white;
-          margin-left: 20px;
-        }
-        header nav{
-          position: absolute;
-          right: 0;
-          text-decoration: none;
-        }
-        header ul{
-          display: flex;
-          list-style-type: none;
-          gap: 10px;  
-        }
-        header a{
-          color: white;
-          margin-right: 30px;
-          font-weight: bold;
-          font-size: 1rem;
-          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-        }
-        header a:hover{
-          color: rgba(242, 199, 8, 0.843);
-          cursor: pointer;
-        }
-        *{
-          text-decoration: none;
-        }
-
-        @media screen and (min-width: 426px) and (max-width: 768px) {
-          header nav {
-            display: none;
-          }
-          header .burger {
-            margin-right: 30px;
-            display: block;
-          }
-          .menu-panel {
-            display: block;
-          }
-          .menu-panel {
-            display: block;
-          }
-        }
-        @media screen and (min-width: 769px) {
-          .menu-panel {
-            display: none;
-          }
-        }
-
-        @media screen and (min-width: 0px) and (max-width: 425px) {
-          header nav {
-            display: none;
-          }
-          header .burger {
-            margin-right: 40px;
-            display: block;
-          }
-          .menu-panel {
-            display: block;
-          }
-        }
-
-        .burger {
-          display: none;
-          color: white;
-        }
-        .menu-panel {
-          z-index: 2;
-          overflow: hidden;
-          margin: 0;
-          position: fixed;
-          background-color: rgb(0, 0, 0);
-          width: 100vw;
-          height: 100vh;
-          top: 0;
-          right: -100vw;
-
-          & li {
-            margin-left: 20px;
-          }
-          transition: right 0.4s ease;
-          & ul {
-            list-style-type: none;
-          }
-          & a {
-            font-weight: bold;
-            font-size: 0.9rem;
-          }
-          & a:hover {
-            color: rgb(224, 156, 30);
-          }
-        }
-        .menunav {
+    <title>Exercise - 13</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        margin: 0;
+      }
+      header {
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px;
+      }
+      .logo-container {
+        display: flex;
+        align-items: center;
+      }
+      .logo {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        margin-right: 12px;
+      }
+      .nav-links {
+        display: flex;
+        list-style: none;
+      }
+      .nav-links li {
+        margin-right: 16px;
+      }
+      .nav-links li a {
+        text-decoration: none;
+        color: white;
+      }
+      #burger {
+        color: white;
+        font-size: 1.2rem;
+        cursor: pointer;
+        display: none;
+      }
+      .menu-panel {
+        background-color: black;
+        color: white;
+        height: 100%;
+        width: 250px;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        transition: right 0.5s ease-in-out;
+      }
+      .menu-panel ul {
+        list-style: none;
+        padding: 50px 20px;
+      }
+      .menu-panel ul li {
+        margin-bottom: 16px;
+      }
+      .menu-panel ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.2rem;
+      }
+      .close-btn {
+        background-color: transparent;
+        color: white;
+        font-size: 2rem;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+      }
+      @media screen and (max-width: 575px) {
+        #burger {
           display: block;
         }
-        .menu-panel li {
-          margin-top: 30px;
+        .navigation {
+          display: none;
         }
-
-        .menu-panel i {
-          position: absolute;
-          top: 35px;
-          right: 20px;
+        .logo-container > h3 {
+          display: none;
         }
         .menu-panel.active {
-          right: 16px;
+          right: 0;
         }
-        .menulist {
-          width: 150px;
-        }
-      </style>
+      }
+    </style>
   </head>
   <body>
     <header>
-        <img src="/assets/images/my_original.jpg" alt="logo">
-        <h2>Kalana Warnakulasooriya</h2>
-      <nav class="navigations">
-        <ul class="menu">
+      <div class="logo-container">
+        <img class="logo" src="/assets/images/my_original.jpg" alt="logo" />
+        <h3>Kalana Warnakulasooriya</h3>
+      </div>
+      <nav class="navigation">
+        <ul class="nav-links">
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Services</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Blog</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
-        <i class="fa-solid fa-bars fa-xl" id="burgerbtn"></i>
-        <section class="menu-panel" id="menu-panel-id">
-          <div>
-            <div class="burger" id="burgerbtn">
-              <i class="fa-solid fa-bars fa-xl"></i>
-            </div>
-            <nav class="menunav">
-              <ul class="menulist">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </nav>
-          </div>
-        </section>
+      <i class="fa fa-bars burger" id="burger" aria-hidden="true"></i>
+      <nav class="menu-panel" id="menu-panel-id">
+        <button class="close-btn" id="btn-close">&times;</button>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
     </header>
+    <script>
+      const burger = document.getElementById("burger");
+      const menuPanel = document.getElementById("menu-panel-id");
+      const closeBtn = document.getElementById("btn-close");
+
+      burger.addEventListener("click", () => {
+        menuPanel.classList.add("active");
+      });
+
+      closeBtn.addEventListener("click", () => {
+        menuPanel.classList.remove("active");
+      });
+    </script>
   </body>
 </html>
